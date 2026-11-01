@@ -1,0 +1,26 @@
+# Dart / Flutter
+.dart_tool/
+.flutter-plugins
+.flutter-plugins-dependencies
+.packages
+.pub-cache/
+/build/
+/coverage/
+
+# IDEs
+.idea/
+.vscode/
+*.iml
+
+# Android / signing
+android/build/
+android/local.properties
+android/key.properties
+*.jks
+*.keystore
+
+# Supabase CLI local state
+supabase/.temp/
+
+# macOS
+.DS_Store

@@ -1,0 +1,10 @@
+[functions.ingest-opportunities]
+# Authentication is enforced in the handler with INGEST_SHARED_SECRET.
+# The RPC independently restricts execution to the service_role.
+verify_jwt = false
+
+[functions.reprocess-opportunities]
+# This administrative endpoint uses its own shared secret and calls a
+# service_role-only RPC; service_role remains only in Supabase's environment.
+verify_jwt = false
+
